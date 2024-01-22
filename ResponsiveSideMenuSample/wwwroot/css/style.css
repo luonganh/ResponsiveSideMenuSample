@@ -1,0 +1,194 @@
+﻿a {
+    color: #0083c4;
+}
+
+.jtv-logo-box {
+    text-align: center;
+}
+
+.logo {
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#body-container {
+    left: 0;
+    position: relative;
+}
+
+.welcome-msg {
+    text-align: left;
+    display: inline-block;
+    padding: 0px;
+    margin: 0px 14px;
+    font-size: 13px;
+    color: #999;
+    vertical-align: top;
+    margin-top: 8px;
+}
+
+.header-top {
+    padding: 3px 0px 10px 0px;
+    background-color: #fff;
+    border-bottom: 1px #ebebeb solid;
+}
+
+.header-container {
+    transition: all 0.5s;
+    background: #fff;
+}
+
+nav {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    z-index: 99;
+    background: #fff;
+}
+
+.mm-toggle-wrap {
+    display: none;
+}
+
+#nav {
+    position: relative;
+    z-index: 10;
+    -webkit-transform: translateZ(0);
+    padding: 0;
+    margin: auto;
+    text-align: center;
+    background-color: #0083c4;
+    border-radius: 0px 3px 0px 0px;
+}
+
+    #nav li {
+        text-align: left;
+    }
+
+    #nav li {
+        list-style: none;
+        border-bottom: none;
+        display: inline-block;
+    }
+
+        #nav li.mega-menu {
+            position: static;
+        }
+
+        #nav li a span {
+            display: inline-block;
+            padding: 0 18px;
+            border-right: 0px solid #f270a0;
+        }
+
+        #nav li:hover a {
+            color: #fff;
+            border-bottom: none;
+            background: inherit;
+        }
+
+    #nav ul li {
+        list-style: none;
+        padding: 5px 0;
+    }
+
+    #nav li a {
+        display: block;
+        text-decoration: none;
+    }
+
+    #nav li a {
+        display: block;
+        padding: 19px 0px;
+    }
+
+    #nav li a {
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+
+    #nav li a {
+        font-size: 12px;
+        position: relative;
+        letter-spacing: 1px;
+        -webkit-transition: all 0.3s cubic-bezier(0.8, 0, 0, 1);
+        -o-transition: all 0.3s cubic-bezier(0.8, 0, 0, 1);
+        transition: all 0.3s cubic-bezier(0.8, 0, 0, 1);
+        box-shadow: inset 0 0 0 0 #fff;
+        text-transform: uppercase;
+    }
+
+    #nav li:hover a {
+        position: relative;
+        z-index: 1;
+    }
+
+    #nav li.drop-menu {
+        position: relative;
+    }
+
+        #nav li.drop-menu ul {
+            position: absolute;
+            top: 55px;
+            left: 0;
+            background: #fff;
+            padding: 6px 0;
+            border: 1px #eee solid;
+            width: 180px;
+            text-align: left;
+            z-index: 1000;
+            display: block !important;
+            opacity: 0;
+            transform: perspective(1160px) rotateX(-90deg);
+            transform-origin: 0 0 0;
+            transition: transform 0.5s ease 0s, opacity 0.6s ease 0s, max-height 0.6s step-end 0s, max-width 0.6s step-end 0s, padding 0.6s step-end 0s;
+        }
+
+        #nav li.drop-menu:hover ul {
+            opacity: 1;
+            transform: perspective(1160px) rotateX(0deg);
+            transition: transform 0.5s ease 0s, opacity 0.2s ease 0s, max-height 0s step-end 0s, max-width 0s step-end 0s, padding 0s step-end 0s;
+            z-index: 999;
+            visibility: visible;
+        }
+
+        #nav li.drop-menu ul li {
+            position: relative;
+            width: 100%;
+        }
+
+        #nav li.drop-menu:hover, #nav li.mega-menu:hover {
+            background: #2ab1ce;
+        }
+
+        #nav li.drop-menu ul li a {
+            color: #333;
+            line-height: 20px;
+            font-size: 12px;
+            padding: 0 12px;
+            display: block;
+            transition: all 0.5s;
+            font-weight: 400;
+            text-transform: capitalize;
+        }
+
+            #nav li.drop-menu ul li a:hover {
+                background: #2ab1ce;
+            }
+
+            #nav li.drop-menu ul li a span, #nav ul.level1 a span {
+                border: none;
+                padding: 0px;
+                font-weight: 400;
+                text-transform: capitalize;
+                width: 100%;
+                color: #333;
+            }
+
+        #nav li.drop-menu ul {
+            display: none;
+        }

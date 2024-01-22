@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ResponsiveSideMenuSample</title>    
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />    
+</head>
+<body>
+    <!-- Mobile menu -->
+    <div id="jtv-mobile-menu">
+        <ul>
+            <li><a href="/"><span>Trang chủ</span></a></li>
+            <li>
+                <a href="javascript:;">Chọn rèm theo loại rèm</a>
+                <ul>
+                    <li><a href="javascript:;"><span>Rèm Vải</span></a></li>
+                    <li><a href="javascript:;"><span>Rèm Cuốn</span></a></li>
+                    <li><a href="javascript:;"><span>Rèm Gỗ</span></a></li>
+                    <li><a href="javascript:;"><span>Rèm Lá Dọc</span></a></li>
+                    <li><a href="javascript:;"><span>Rèm Sáo Nhôm</span></a></li>
+                    <li><a href="javascript:;"><span>Rèm Nhựa</span></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">Chọn rèm theo vị trí</a>
+                <ul>
+                    <li><a href="javascript:;"><span>Văn Phòng</span></a></li>
+                    <li><a href="javascript:;"><span>Phòng Ngủ</span></a></li>
+                    <li><a href="javascript:;"><span>Phòng Khách</span></a></li>
+                    <li><a href="javascript:;"><span>Phòng Tắm</span></a></li>
+                </ul>
+            </li>
+            <li><a href="javascript:;"><span>Chọn rèm theo màu sắc</span></a></li>
+        </ul>
+    </div>
+
+    <div id="page">
+        <header>
+            <div class="header-container">
+                <div class="header-top">
+                    <div class="container">
+                        <div class="row">                  
+                            <div class="col-xs-12 col-sm-6" style="margin: 0 auto;float: none !important;">
+                                <div class="welcome-msg">                            
+                                    Copyright © @DateTime.Now.Year <a href="/"> Rèm Đức Trung</a>. All Rights Reserved. Powered by 
+                                    <a href="https://www.facebook.com/luongtuananh.1986">
+                                        Lương Tuấn Anh
+                                        </a>   
+                                </div>                        
+                            </div>                                        
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">     
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                            <div class="jtv-top-cart-box">                      
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4 col-sm-4 col-xs-12 jtv-logo-box">                    
+                            <div class="logo"> <a title="eCommerce" href="/">
+                                <img alt="Rèm cửa Logo" src="~/images/Logo.png">                        
+                                  </a> 
+                            </div>                   
+                        </div>                
+                        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                            <div class="jtv-top-cart-box">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Desktop menu -->
+        <nav>
+            <div class="container">
+                <div class="mm-toggle-wrap">
+                    <div class="mm-toggle"><i class="fa fa-align-justify"></i><span class="mm-label">Menu</span> </div>
+                </div>
+                <div class="nav-inner">               
+                    <ul id="nav" class="hidden-xs">
+                        <li class="mega-menu"> <a class="level-top" href="/"><span>Trang chủ</span></a></li>
+                        <li class="drop-menu">
+                            <a href="javascript:;"> <span>Chọn rèm theo loại rèm</span> </a>
+                            <ul>
+                                <li><a href="javascript:;"><span>Rèm Vải</span></a></li>
+                                <li><a href="javascript:;"><span>Rèm Cuốn</span></a></li>
+                                <li><a href="javascript:;"><span>Rèm Gỗ</span></a></li>
+                                <li><a href="javascript:;"><span>Rèm Lá Dọc</span></a></li>
+                                <li><a href="javascript:;"><span>Rèm Sáo Nhôm</span></a></li>
+                                <li><a href="javascript:;"><span>Rèm Nhựa</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="drop-menu">
+                            <a href="javascript:;"> <span>Chọn rèm theo vị trí</span> </a>
+                            <ul>
+                                <li><a href="javascript:;"><span>Văn Phòng</span></a></li>
+                                <li><a href="javascript:;"><span>Phòng Ngủ</span></a></li>
+                                <li><a href="javascript:;"><span>Phòng Khách</span></a></li>
+                                <li><a href="javascript:;"><span>Phòng Tắm</span></a></li>                            
+                            </ul>
+                        </li>
+                        <li class="mega-menu"> <a class="level-top" href="javascript:;"><span>Chọn rèm theo màu sắc</span></a></li>                    
+                    </ul>
+                </div>
+            </div>
+        </nav>
+       
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>    
+    </div>
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/jtv-mobile-menu.js" asp-append-version="true"></script>
+    <script src="~/js/main.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
